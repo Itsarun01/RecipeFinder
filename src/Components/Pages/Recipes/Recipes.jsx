@@ -4,10 +4,13 @@ import "./Recipes.css";
 const Recipes = () => {
   return (
     <>
-      <SearchBar />
-      <RecipeLists />
+      <div>
+        <SearchBar />
+        <RecipeLists />
+      </div>
     </>
   );
+  
 };
 
 export default Recipes;

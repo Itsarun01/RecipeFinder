@@ -5,18 +5,18 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="logo-header">
-          <p className="logo">Recipe App</p>
+        <div className="logo-section">
+          <h1 className="logo">Recipe App</h1>
         </div>
         <ul className="nav-list">
           <li className="nav-link">
-            <Link className="link" to="/">
+            <Link Link to="/">
               Home
             </Link>
           </li>
           <li className="nav-link">
-            <Link className="link" to="/recipes">
-              Recipe
+            <Link Link to="/recipes">
+              Recips
             </Link>
           </li>
         </ul>
