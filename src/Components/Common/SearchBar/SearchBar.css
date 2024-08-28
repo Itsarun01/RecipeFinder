@@ -1,45 +1,75 @@
 .search-container {
-    margin-top: 20px;
-    /* border:  1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    margin-top: 50px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    /* background-color: #f9f9f9; */
     
 
 }
 
+
 .head-text{
-    background-color: red;
-    color: white;
+    font: 1.5em sans-serif;
+    font-weight: bolder;
+    color: black;
     text-align: center;
     margin: 0 auto;
+    padding: 5px 0;
   
+}
+
+.head-text span{
+    color: red;
 }
 
 .search-inputs{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    column-gap: 20px;
+    column-gap: 10px;
    
 }
 
-.search-inputs .search-box{
-    width: 300px;
-    height: 35px;
-    border: 2px solid red;
-    border-radius: 5px;
+
+
+.search-box{
+    width: 280px;
+    height: 45px;
+    border: 3px solid rgb(221, 58, 58);
+    border-radius: 10px;
     padding: 5px;
     outline: none;
     font: 1em sans-serif;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
 }
 
-.search-inputs .btn{
-    width: 100px;
-    height: 35px;
+.btn{
+    background-color: rgb(221, 58, 58);
+    color: white;
+    width: 80px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none; 
+    /* background: transparent; */
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.btn:hover{
     background-color: red;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font: 1em sans-serif;
+    transition: 0.5s;
 }
+
+
 
