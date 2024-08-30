@@ -1,10 +1,10 @@
-import "./SearchBar.css";
+import "./Search.css";
 import {useState} from "react";
 
-const SearchBar = ({setSearchQuery}) => {
+const Search = ({setSearchQuery}) => {
   const [value, setValue] = useState("");
 
-  const submitForm = (e) => {
+  const formsubmit = (e) => {
     e.preventDefault();
     setSearchQuery(value);
   };
@@ -16,12 +16,13 @@ const SearchBar = ({setSearchQuery}) => {
           Discover Recipes That Suit You <span>Perfectly.</span>
         </h1>
         <div className="search-inputs">
-          <form onSubmit={submitForm}>
+          <form onSubmit={formsubmit}>
             <input
               onChange={(e) => setValue(e.target.value)}
+              value={value}
               className="search-box"
               type="text"
-              placeholder="Enter Recipe"
+              placeholder="Enter Recipe Name"
             />
             <button className="btn">Find</button>
           </form>
@@ -31,4 +32,4 @@ const SearchBar = ({setSearchQuery}) => {
   );
 };
 
-export default SearchBar;
+export default Search;

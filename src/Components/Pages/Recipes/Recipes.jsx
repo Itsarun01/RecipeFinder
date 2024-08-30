@@ -1,21 +1,30 @@
-import SearchBar from "../../Common/SearchBar/SearchBar";
-import RecipeLists from "./RecipeLists";
+import {useState, useEffect} from "react";
 import "./Recipes.css";
-import {useState} from "react";
-import {getResults} from "../../Common/Services/Api";
+import SearchBar from "../../Common/Search/Search";
+import RecipeLists from "./RecipeLists";
+import {getRecipe} from "../../Services/Api";
 
 const Recipes = () => {
-  const recipesResults = async () => {
-    const [searchQuery, setSearchQuery] = useState("");
-    await getResults(searchQuery);
-    
+  const [searchQuery, setSearchQuery] = useState("pizza");
+
+  const [recipes, setRecipes] = useState([]);
+
+  useEffect(() => {
+    getSearchResult();
+  }, [searchQuery]);
+
+  const getSearchResult = async () => {
+    let result = await getRecipe(searchQuery);
+
+    if (result && result.recipes) {
+      setRecipes(result.Recipes);
+    }
   };
+
   return (
     <>
-      <div>
-        <SearchBar setSearchQuery={searchQuery} />
-        <RecipeLists />
-      </div>
+      <SearchBar setSearchQuery={setSearchQuery} />
+      <RecipeLists recipes={recipes} searchQuery={searchQuery} />
     </>
   );
 };
