@@ -5,7 +5,7 @@ import RecipeLists from "./RecipeLists";
 import {getRecipe} from "../../Services/Api";
 
 const Recipes = () => {
-  const [searchQuery, setSearchQuery] = useState("pizza");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const [recipes, setRecipes] = useState([]);
 
@@ -17,7 +17,7 @@ const Recipes = () => {
     let result = await getRecipe(searchQuery);
 
     if (result && result.recipes) {
-      setRecipes(result.Recipes);
+      setRecipes(result.recipes);
     }
   };
 
