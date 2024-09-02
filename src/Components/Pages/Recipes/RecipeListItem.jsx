@@ -8,8 +8,8 @@ const RecipeListItme = ({recipe}) => {
         <div className="card-body">
           <h2 className="card-title "> {recipe.title}</h2>
           <p className="card-publisher-name">
-            {" "}
-            <span>Publisher</span> : {recipe.publisher}
+            <span>Publisher</span> :
+            <span href={recipe.publisher_url}> {recipe.publisher}</span>
           </p>
           <div className="card-btns">
             {" "}

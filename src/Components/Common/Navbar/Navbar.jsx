@@ -5,10 +5,10 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="logo-section">
+        <Link to="/" className="logo-section">
           <h1 className="logo">Recipe App</h1>
-        </div>
-        <ul className="nav-list">
+        </Link>
+        {/* <ul className="nav-list">
           <li className="nav-link">
             <Link Link to="/">
               Home
@@ -19,7 +19,7 @@ const Navbar = () => {
               Recips
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </>
   );
