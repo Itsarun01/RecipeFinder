@@ -12,21 +12,18 @@ const RecipeListItme = ({recipe}) => {
             <span href={recipe.publisher_url}> {recipe.publisher}</span>
           </p>
           <div className="card-btns">
-            {" "}
             <button className="card-btn">
-              <Link
-                to={`/recipe/${recipe.recipe_id}`}
-                href={recipe.source_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-link"
-              >
-                Read More
+              <Link to={`/recipes/${recipe.recipe_id}`} target="_blank">
+                View
               </Link>
             </button>
             <button className="card-btn">
-              <Link to={`/recipe/${recipe.source_url}`} className="card-link">
-                Recipe Details
+              <Link
+                to={recipe.source_url}
+                className="card-link"
+                target="_blank"
+              >
+                Recipe Source
               </Link>
             </button>
           </div>

@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import "./Recipes.css";
 import SearchBar from "../../Common/Search/Search";
 import RecipeLists from "./RecipeLists";
-import {getRecipe} from "../../Services/Api";
+import {getRecipes} from "../../Services/Api";
 
 const Recipes = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -14,7 +14,7 @@ const Recipes = () => {
   }, [searchQuery]);
 
   const getSearchResult = async () => {
-    let result = await getRecipe(searchQuery);
+    let result = await getRecipes(searchQuery);
 
     if (result && result.recipes) {
       setRecipes(result.recipes);

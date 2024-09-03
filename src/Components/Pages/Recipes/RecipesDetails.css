@@ -1,0 +1,42 @@
+.container {
+  height: auto;
+  /* border: 2px solid red; */
+  padding: 50px 50px;
+
+}
+
+.back-btn{
+    width: 100px;
+    height: 30px;
+    padding: 5px 15px;
+    
+    border-radius: 5px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+.recipe-card{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.recipe-img{
+   
+}
+
+.recipe-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;    
+}
+
