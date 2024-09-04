@@ -8,7 +8,7 @@ const RecipeListItme = ({recipe}) => {
         <div className="card-body">
           <h2 className="card-title "> {recipe.title}</h2>
           <p className="card-publisher-name">
-            <span>Publisher</span> :
+            <span>by</span> :
             <span href={recipe.publisher_url}> {recipe.publisher}</span>
           </p>
           <div className="card-btns">
@@ -18,13 +18,9 @@ const RecipeListItme = ({recipe}) => {
               </Link>
             </button>
             <button className="card-btn">
-              <Link
-                to={recipe.source_url}
-                className="card-link"
-                target="_blank"
-              >
+              <a to={recipe.source_url} className="card-link" target="_blank">
                 Recipe Source
-              </Link>
+              </a>
             </button>
           </div>
         </div>

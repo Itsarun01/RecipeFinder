@@ -39,9 +39,6 @@ const RecipesDetails = () => {
               {recipe.publisher_url}
             </a>
           </p>
-          <p className="recipe-social-rank">
-            <span>Social Rank</span> : {recipe.social_rank}
-          </p>
           <p className="recipe-source-url">
             <span>Recipe Source</span> :{" "}
             <a href={recipe.source_url} target="_blank">
