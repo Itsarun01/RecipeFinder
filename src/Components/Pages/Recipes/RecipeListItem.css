@@ -81,14 +81,6 @@
         font-size: 14px;
     }
 
-    .card-btn:hover{
-        background-color: red;
-    }
-
-    .card-btn a:hover{
-        color: white;
-    }
-
     .card-btns{
         column-gap: 5px;
     }
@@ -287,9 +279,11 @@
 @media screen and (max-width: 576px){
     .card-img{
         height: 150px;
+
     }
 
     .card-title{
+        margin-top: 10px;
         font-size: 16px;
     }
 
