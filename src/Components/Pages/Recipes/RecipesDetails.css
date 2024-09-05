@@ -20,6 +20,7 @@
 }
 
 .recipe-card{
+    width: 100%;
     margin-top: 20px;
     display: flex;
     column-gap: 40px;
@@ -71,4 +72,144 @@
     padding-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
+}
+
+/* // Responsive for RecipeDetails// */
+
+@media screen and (max-width: 768px){
+    .container{
+        padding: 20px 20px;
+    }
+
+    .recipe-card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .recipe-content{
+        padding: 10px;
+    }
+
+    .recipe-title{
+        font-size: 20px;
+    }
+
+    .recipe-publisher-name{
+        font-size: 15px;
+    }
+
+    .recipe-publisher-url{
+        font-size: 15px;
+    }
+
+    .recipe-source-url{
+        font-size: 15px;
+    }
+
+    .back-btn{
+        width: 80px;
+        height: 20px;
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+
+}
+
+/* // Responsive for RecipeDetails// */
+
+@media screen and (max-width: 500px){
+    .container{
+        padding: 10px 10px;
+    }
+
+    .recipe-card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .recipe-content{
+        padding: 10px;
+    }
+
+    .recipe-title{
+        font-size: 15px;
+    }
+
+    .recipe-publisher-name{
+        font-size: 12px;
+    }
+
+    .recipe-publisher-url{
+        font-size: 12px;
+    }
+
+    .recipe-source-url{
+        font-size: 12px;
+    }
+
+    .back-btn{
+        width: 70px;
+        height: 20px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+
+}
+
+/* // responsive for RecipeDetails 400px */
+
+@media screen and (max-width: 400px){
+    .container{
+        padding: 10px 10px;
+    }
+
+    .recipe-card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .recipe-content{
+        padding: 10px;
+    }
+
+    .recipe-title{
+        font-size: 15px;
+    }
+
+    .recipe-publisher-name{
+        font-size: 12px;
+    }
+
+    .recipe-publisher-url{
+        font-size: 12px;
+    }
+
+    .recipe-source-url{
+        font-size: 12px;
+    }
+
+    .back-btn{
+        width: 70px;
+        height: 20px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
 }

@@ -36,25 +36,6 @@
 
 /* // Responsive for Navbar  */
 
-@media screen and (max-width: 768px){
-    .navbar{
-        height: 50px;
-    }
-
-    .logo-section h1{
-        font-size: 1rem;
-    }
-
-    .navbar{
-        column-gap: 10px;
-    }
-
-    .logo-section{
-        padding: 5px 10px;
-    }
-    
-}
-
 
 
 

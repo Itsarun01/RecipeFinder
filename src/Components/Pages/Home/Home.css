@@ -14,8 +14,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
+    position: absolute;
 
 }
+
+/* // img */
 
 .hero-content{
     position: absolute;
@@ -87,15 +90,12 @@
         color: #fff;
     }
 
-    .hero-btn:hover{
-        background-color: #fff;
-        color: red;
-        transition: 0.5s;
-    }
 
 
 
 }
+
+/* // Responsive for Home Page */
 
 /* // Responsive for Home Page */
 

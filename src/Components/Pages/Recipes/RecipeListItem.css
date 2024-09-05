@@ -310,10 +310,6 @@
         background-color: red;
     }
 
-    .card-btn a:hover{
-        color: white;
-    }
-
     .card-btns{
         column-gap: 5px;
     }
