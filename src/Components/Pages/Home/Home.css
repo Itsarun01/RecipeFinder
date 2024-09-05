@@ -60,4 +60,44 @@
 }
 
 
+/* // Responsive for Home Page */
+
+@media screen and (max-width: 768px){
+
+    .hero-heading{
+        font-size: 1.5rem;
+    }
+    .hero-btn{
+        padding: 5px 15px;
+    }
+
+    .hero-content{
+        width: 80%;
+
+    }
+
+    .hero-btn{
+        display: block;
+        margin: 20px auto;
+
+    }
+
+    .hero-btn:hover{
+        background-color: red;
+        color: #fff;
+    }
+
+    .hero-btn:hover{
+        background-color: #fff;
+        color: red;
+        transition: 0.5s;
+    }
+
+
+
+}
+
+/* // Responsive for Home Page */
+
+
 

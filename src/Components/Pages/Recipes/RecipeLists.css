@@ -25,3 +25,68 @@
     /* border: 2px solid red; */
     
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(185, 184, 184, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card:hover{
+    box-shadow: 0 0 20px 0 rgba(185, 184, 184, 0.5);
+
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.card p{
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* // Responsive for RecipeLists Page */
+
+@media screen and (max-width: 768px){
+
+    .container{
+        padding: 10px 20px 50px 20px;
+    }
+
+    .cards{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .card img{
+        height: 150px;
+    }
+
+    .card h3{
+        font-size: 1.2rem;
+    }
+
+    .card p{
+        font-size: 0.8rem;
+    }
+
+    
+
+}

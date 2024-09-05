@@ -33,26 +33,29 @@
     text-transform: uppercase;
     
 }
-/* 
-.nav-list{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-right: 20px;
+
+/* // Responsive for Navbar  */
+
+@media screen and (max-width: 768px){
+    .navbar{
+        height: 50px;
+    }
+
+    .logo-section h1{
+        font-size: 1rem;
+    }
+
+    .navbar{
+        column-gap: 10px;
+    }
+
+    .logo-section{
+        padding: 5px 10px;
+    }
+    
 }
 
-.nav-link a{
-    text-decoration: none;
-    color: #000;
-    padding: 10px 20px;
-    transition: all 0.3s;
-}
 
-.nav-link a:hover{
-    text-decoration: underline 2px solid red;
-
-} */
 
 
 

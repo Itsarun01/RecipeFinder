@@ -67,4 +67,29 @@
 }
 
 
+/* // Responsive for Search Page  */
+
+@media screen and (max-width: 768px){
+    .search-container{
+        height: 150px;
+    }
+    .head-text{
+        font-size: 1.2rem;
+    }
+    .search-box{
+        width: 200px;
+        height: 35px;
+    }
+    .btn{
+        width: 60px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .search-inputs form{
+        column-gap: 5px;
+    }
+
+    
+}
 
