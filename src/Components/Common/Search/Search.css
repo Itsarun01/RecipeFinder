@@ -33,7 +33,7 @@
    
 }
 .search-box{
-    width: 280px;
+    width: 300px;
     height: 45px;
     border: 3px solid rgb(221, 58, 58);
     border-radius: 10px;
@@ -49,7 +49,7 @@
 .btn{
     background-color: rgb(221, 58, 58);
     color: white;
-    width: 80px;
+    width: 150px;
     height: 45px;
     font-size: 17px;
     font-weight: 700;
@@ -73,21 +73,67 @@
     .search-container{
         height: 150px;
     }
+   
     .head-text{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
+
+    
     .search-box{
-        width: 200px;
-        height: 35px;
+        width: 220px;
+        height: 40px;
     }
     .btn{
-        width: 60px;
-        height: 35px;
+        width: 100px;
+        height: 40px;
         font-size: 15px;
     }
 
-    .search-inputs form{
+    .search-inputs{
         column-gap: 5px;
+        
+    }
+
+    
+}
+
+/* // Responsive for Search Page 400px */
+
+@media screen and (max-width: 400px){
+    .search-container{
+        height: 150px;
+        margin-bottom: 20px;
+        
+    }
+   
+    .head-text{
+        margin-top: 30px;
+        font-size: 1.4rem;
+    }
+
+    
+    .search-box{
+        width: 250px;
+        height: 35px;
+    }
+    .btn{
+        width: 150px;
+        height: 35px;
+        font-size: 15px;
+        
+    }
+
+    .search-inputs{
+       flex-direction: column;
+         row-gap: 10px;
+        
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
     }
 
     

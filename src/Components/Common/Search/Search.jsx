@@ -24,7 +24,7 @@ const Search = ({setSearchQuery}) => {
               type="text"
               placeholder="Enter Recipe Name"
             />
-            <button className="btn">Find</button>
+            <button className="btn">Search</button>
           </form>
         </div>
       </div>

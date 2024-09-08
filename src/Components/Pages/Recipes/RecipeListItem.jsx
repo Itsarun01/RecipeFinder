@@ -18,11 +18,14 @@ const RecipeListItme = ({recipe}) => {
               </Link>
             </button>
             <button className="card-btn">
-              <a to={recipe.source_url} className="card-link" target="_blank">
+              <Link
+                to={recipe.source_url}
+                className="card-link"
+                target="_blank"
+              >
                 Recipe Source
-              </a>
+              </Link>
             </button>
-            
           </div>
         </div>
       </div>
