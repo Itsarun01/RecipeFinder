@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 200px;
+    height: 250px;
     padding: 30px 0;
     border-radius: 5px;
     /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); 
@@ -14,7 +14,7 @@
 
 
 .head-text{
-    font: 1.5em sans-serif;
+    font: 2em sans-serif;
     font-weight: bolder;
     color: black;
     text-align: center;
@@ -58,6 +58,7 @@
     cursor: pointer;
     padding: 5px;
     border-radius: 10px;
+    
 }
 
 .btn:hover{
@@ -71,7 +72,7 @@
 
 @media screen and (max-width: 768px){
     .search-container{
-        height: 150px;
+        height: 200px;
     }
    
     .head-text{
@@ -90,7 +91,7 @@
     }
 
     .search-inputs{
-        column-gap: 5px;
+        column-gap: 10px;
         
     }
 
@@ -101,14 +102,14 @@
 
 @media screen and (max-width: 400px){
     .search-container{
-        height: 150px;
+        height: 250px;
         margin-bottom: 20px;
         
     }
    
     .head-text{
-        margin-top: 30px;
-        font-size: 1.4rem;
+
+        font-size: 1.7rem;
     }
 
     
